@@ -1,0 +1,75 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: sans-serif;
+}
+.dot {
+  height: 100%;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bar {
+  height: 100%;
+  background-color: darkcyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cir {
+  font-size: 10px;
+  text-align: center;
+  color: white;
+  width: 80px;
+  height: 15px;
+  animation: 0.7s aa infinite ease-in-out;
+}
+
+@keyframes aa {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(0.5turn);
+  }
+}
+
+.squ {
+  width: 10px;
+  height: 40px;
+  background-color: white;
+  margin: 3px;
+}
+
+.squ:first-child {
+  animation: 1s bb infinite ease-in-out;
+}
+.squ:nth-child(2) {
+  animation: 1s bb 0.2s infinite ease-in-out;
+}
+.squ:nth-child(3) {
+  animation: 1s bb 0.4s infinite ease-in-out;
+}
+.squ:nth-child(4) {
+  animation: 1s bb 0.6s infinite ease-in-out;
+}
+.squ:last-child {
+  animation: 1s bb 0.8s infinite ease-in-out;
+}
+@keyframes bb {
+  0% {
+    transform: none;
+  }
+  20% {
+    transform: scaleY(2);
+  }
+  50% {
+    transform: none;
+  }
+  100% {
+    transform: none;
+  }
+}
